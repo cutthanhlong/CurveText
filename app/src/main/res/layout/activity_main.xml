@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/textArcLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/textArcView"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:gravity="center">
+
+        <com.a_lab.textarc.TextArc
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:center_angle="-90"
+            app:font_family="@font/krabuler"
+            app:radius="10dp"
+            app:text="Text arc that was added to xml"
+            app:text_color="@color/red"
+            app:text_size="28sp" />
+    </LinearLayout>
+
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:max="100"
+        android:maxHeight="6dp" />
+</LinearLayout>
